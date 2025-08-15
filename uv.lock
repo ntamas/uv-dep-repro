@@ -293,18 +293,6 @@ wheels = [
 ]
 
 [[package]]
-name = "click"
-version = "8.2.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "colorama", marker = "sys_platform == 'win32'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/60/6c/8ca2efa64cf75a977a0d7fac081354553ebe483345c734fb6b6515d96bbc/click-8.2.1.tar.gz", hash = "sha256:27c491cc05d968d271d5a1db13e3b5a184636d9d930f148c50b038f0d0646202", size = 286342, upload-time = "2025-05-20T23:19:49.832Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/32/10bb5764d90a8eee674e9dc6f4db6a0ab47c8c4d0d83c27f7c39ac415a4d/click-8.2.1-py3-none-any.whl", hash = "sha256:61a3265b914e850b85317d0b3109c7f8cd35a670f963866005d6ef1d5175a12b", size = 102215, upload-time = "2025-05-20T23:19:47.796Z" },
-]
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -580,11 +568,6 @@ name = "flockwave-server"
 version = "2.33.1"
 source = { editable = "." }
 dependencies = [
-    { name = "bidict" },
-    { name = "blinker" },
-    { name = "click" },
-    { name = "pynmea2" },
-    { name = "python-baseconv" },
     { name = "trio" },
 ]
 
@@ -641,14 +624,9 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bidict", specifier = ">=0.23.1" },
-    { name = "blinker", specifier = ">=1.9.0" },
-    { name = "click", specifier = ">=8.2.1" },
     { name = "flockwave-flockctrl", marker = "extra == 'collmot'", specifier = ">=4.0.0", index = "https://pypi.collmot.com/" },
     { name = "flockwave-server", extras = ["collmot", "pro"], marker = "extra == 'all'" },
     { name = "flockwave-server", extras = ["pro"], marker = "extra == 'collmot'" },
-    { name = "pynmea2", specifier = ">=1.19.0" },
-    { name = "python-baseconv", specifier = ">=1.2.2" },
     { name = "skybrush-ext-dock", marker = "extra == 'collmot'", specifier = ">=1.2.0", index = "https://pypi.collmot.com/" },
     { name = "skybrush-ext-firmware-update", marker = "extra == 'pro'", specifier = ">=0.5.0", index = "https://pypi.collmot.com/" },
     { name = "skybrush-ext-flight-report", marker = "extra == 'pro'", specifier = ">=1.0.3", index = "https://pypi.collmot.com/" },
@@ -1424,12 +1402,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/13/08/056279526554c6c6e
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/22/71953f47e0da5852c899f58cd7a31e6100f37c632b7b9ee52d067613a844/pytest_trio-0.8.0-py3-none-any.whl", hash = "sha256:e6a7e7351ae3e8ec3f4564d30ee77d1ec66e1df611226e5618dbb32f9545c841", size = 27221, upload-time = "2022-11-01T17:24:27.501Z" },
 ]
-
-[[package]]
-name = "python-baseconv"
-version = "1.2.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/33/d0/9297d7d8dd74767b4d5560d834b30b2fff17d39987c23ed8656f476e0d9b/python-baseconv-1.2.2.tar.gz", hash = "sha256:0539f8bd0464013b05ad62e0a1673f0ac9086c76b43ebf9f833053527cd9931b", size = 4929, upload-time = "2019-04-04T19:28:57.17Z" }
 
 [[package]]
 name = "python-rtmidi"
