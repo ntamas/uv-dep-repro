@@ -1,0 +1,17 @@
+[project]
+name = "uv-dep-repro"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.13"
+dependencies = ["trio >= 0.30.0"]
+
+[project.optional-dependencies]
+some_extra = ["swhl == 0.3.0"]
+
+[tool.uv.sources]
+swhl = { index = "collmot" }
+
+[[tool.uv.index]]
+name = "collmot"
+url = "https://pypi.collmot.com/"
+explicit = true
